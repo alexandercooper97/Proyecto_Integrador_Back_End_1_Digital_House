@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Pacientes</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Lista de Pacientes</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>DNI</th>
+        <th>Domicilio</th>
+        <th>Fecha de Alta</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody id="pacientes-tbody">
+    <!-- Los pacientes serán cargados aquí -->
+    </tbody>
+</table>
+
+<h2>Agregar Paciente</h2>
+<form id="form-paciente">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="apellido" placeholder="Apellido" required>
+    <input type="text" id="dni" placeholder="DNI" required>
+    <input type="text" id="domicilio" placeholder="Domicilio" required>
+    <input type="date" id="fechaAlta" required>
+    <button type="submit">Agregar</button>
+</form>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

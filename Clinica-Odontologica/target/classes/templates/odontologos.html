@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Odontólogos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Lista de Odontólogos</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Matrícula</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody id="odontologos-tbody">
+    <!-- Los odontólogos serán cargados aquí -->
+    </tbody>
+</table>
+
+<h2>Agregar Odontólogo</h2>
+<form id="form-odontologo">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="apellido" placeholder="Apellido" required>
+    <input type="text" id="matricula" placeholder="Matrícula" required>
+    <button type="submit">Agregar</button>
+</form>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

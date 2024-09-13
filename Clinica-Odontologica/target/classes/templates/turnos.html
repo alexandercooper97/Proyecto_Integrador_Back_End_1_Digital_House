@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Turnos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Lista de Turnos</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Odontólogo</th>
+        <th>Paciente</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody id="turnos-tbody">
+    <!-- Los turnos serán cargados aquí -->
+    </tbody>
+</table>
+
+<h2>Asignar Turno</h2>
+<form id="form-turno">
+    <input type="number" id="odontologoId" placeholder="ID Odontólogo" required>
+    <input type="number" id="pacienteId" placeholder="ID Paciente" required>
+    <input type="date" id="fecha" required>
+    <input type="time" id="hora" required>
+    <button type="submit">Asignar</button>
+</form>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
